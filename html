@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J & K Resell</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+.content {
+    padding: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    color: #fff;
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd400;
+}
+
+/* HERO */
+.hero {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.hero span {
+    color: #ffd400;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffd400;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #fff;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 70px 20px;
+}
+
+.products h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    border: 2px solid #000;
+    padding: 20px;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3 {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffd400;
+    padding: 7px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* DEALS */
+.deals {
+    background: #ffd400;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.deals h2 {
+    font-size: 55px;
+    margin: 0;
+}
+
+.deals p {
+    font-size: 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 45px;
+}
+
+.about h3 {
+    font-size: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.newsletter h2 {
+    font-size: 40px;
+}
+
+.newsletter p {
+    font-size: 18px;
+}
+
+.newsletter input {
+    padding: 15px;
+    width: 280px;
+    max-width: 80%;
+    border: none;
+    margin-right: 5px;
+}
+
+.newsletter button {
+    padding: 15px 25px;
+    border: none;
+    background: #ffd400;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 3px solid #ffd400;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .deals h2 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">J & K RESELL</div>
+
+    <nav>
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h1>
+        THE BEST<br>
+        <span>DEALS.</span>
+    </h1>
+
+    <p>
+        Hard-to-find pieces. Fair prices. Fast dispatch.
+    </p>
+
+    <a href="#shop" class="button">
+        SHOP NOW
+    </a>
+
+</section>
+
+
+<section id="shop" class="products">
+
+    <div class="content">
+
+        <h2>FEATURED STOCK</h2>
+
+        <div class="product-grid">
+
+            <div class="product">
+
+                <span class="badge">
+                    UNISEX
+                </span>
+
+                <img src="IMG_5357.jpeg" alt="Essentials Fear of God">
+
+                <h3>
+                    Essentials Fear of God Low Black
+                </h3>
+
+                <p class="price">
+                    $75
+                </p>
+
+                <span class="badge">
+                    LOW STOCK
+                </span>
+
+            </div>
+
+
+            <div class="product">
+
+                <span class="badge">
+                    ADIDAS MEN'S
+                </span>
+
+                <img src="IMG_5357.jpeg" alt="Yeezy Slides Onyx">
+
+                <h3>
+                    Yeezy Slides Onyx
+                </h3>
+
+                <p class="price">
+                    $40
+                </p>
+
+                <span class="badge">
+                    ONE LEFT
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="deals">
+
+    <h2>
+        THE BEST DEALS.
+    </h2>
+
+    <p>
+        24H &nbsp; FAST DISPATCH &nbsp; 4.9 BUYER RATING
+    </p>
+
+</section>
+
+
+<section id="about" class="about">
+
+    <h2>
+        TWO FOUNDERS.<br>
+        ONE OBSESSION.
+    </h2>
+
+    <h3>
+        BUILT BY COLLECTORS
+    </h3>
+
+    <p>
+        <strong>WE FIND IT. YOU FLEX IT.</strong>
+    </p>
+
+    <p>
+        J & K started with two friends, a shared love of clothing,
+        and a simple promise: make hard-to-find heat easier to trust.
+        We hand-source every piece and check every detail before it
+        reaches you.
+    </p>
+
+    <p>
+        Fair pricing<br>
+        Careful packaging<br>
+        Real support
+    </p>
+
+    <a href="#shop" class="button">
+        BROWSE COLLECTION
+    </a>
+
+</section>
+
+
+<section id="contact" class="newsletter">
+
+    <h2>
+        GET NOTIFIED OF NEW STOCK BEFORE OTHERS.
+    </h2>
+
+    <p>
+        Early access, restock alerts, and members-only deals.
+    </p>
+
+    <form>
+        <input
+            type="email"
+            placeholder="Your email address"
+            required
+        >
+
+        <button type="submit">
+            JOIN THE LIST
+        </button>
+    </form>
+
+</section>
+
+
+<footer>
+
+    <h3>
+        J & K RESELL
+    </h3>
+
+    <p>
+        © 2026 J & K RESELL. ALL RIGHTS RESERVED.
+    </p>
+
+    <p>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </p>
+
+</footer>
+
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Added to your list!");
+});
+</script>
+
+</body>
+</html>
